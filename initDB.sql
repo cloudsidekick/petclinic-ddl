@@ -63,6 +63,6 @@ CREATE TABLE IF NOT EXISTS visits (
 CREATE TABLE IF NOT EXISTS procedure_codes (
   id INT(4) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, 
   visit_id INT(4) UNSIGNED NOT NULL,
-  procedure_code VARCHAR(16) NOT NULL,
+  procedure_code VARCHAR(24) NOT NULL,
   FOREIGN KEY (visit_Id) REFERENCES visits(id)
 ) engine=InnoDB;
